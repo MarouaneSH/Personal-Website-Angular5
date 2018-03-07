@@ -1,0 +1,66 @@
+:host{
+  height: 100%;
+  overflow: hidden;
+}
+
+h4{
+  color: #292e2c;
+  position: relative;
+  z-index: 1;
+  &::after{
+    content: "";
+    background: #3ee7ad;
+    position: absolute;
+    width: 91px;
+    height: 27px;
+    left: 0px;
+    z-index: -1;
+    bottom: 10px;
+    right: 0;
+  }
+}
+h6{
+  color: #292e2c;
+}
+p{
+  color: #8e9090;
+}
+.project-screenshot{
+  img{
+    max-width: 100%;
+    margin:0 auto;
+    margin-top: 15px;
+  }
+}
+a{
+  color: #6274aa;
+  font-size: 12px;
+}
+.work-wrapper{
+  position: relative;
+}
+.close-dialog{
+  position: absolute;
+  top: -10px;
+  right: 11px;
+  cursor: pointer;
+}
+.close-dialog div{
+  height: 37px;
+  width: 2px;
+  border-radius: 58px;
+  background: white;
+
+  transform: rotate(-45deg);
+  &:first-of-type{
+    transform: rotate(45deg);
+  }
+}
+
+.close-icon{
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-size: 25px;
+  cursor: pointer;
+}

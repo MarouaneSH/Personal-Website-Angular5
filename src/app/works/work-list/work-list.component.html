@@ -1,0 +1,37 @@
+<div class="bg-image"
+     style="background-image:url('assets/img/work.jpg')">
+</div>
+
+<div class="work-wrapper" @showup>
+  <div class="main-work">
+      <div class="work-title">
+        <h5 >WORKsssssssssssss</h5>
+      </div>
+      <div class="work-content">
+          <div class="d-flex justify-content-end">
+              <button mat-button class="active" #all (click)="changeCategorie(all)">All</button>
+              <button mat-button #web (click)="changeCategorie(web)">Web</button>
+              <button mat-button #mobile (click)="changeCategorie(mobile)">Mobile</button>
+          </div>
+          <perfect-scrollbar style="max-width: 100%; max-height: calc(100% - 19px)" >
+            <div class="work-desc">
+              <div class="card-columns" >
+                <div class="card" *ngFor="let project of filtredProject "  [class.showup]="filter" (click)="openDialog(project)" >
+                  <img class="card-img-top" src="assets/img/works/{{project.defaultImage}}" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">{{project.name}}</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center" >
+                      <mat-chip-list>
+                          <mat-chip>{{project.technology[0]}}</mat-chip>
+                      </mat-chip-list>
+                    <span class="ml-auto">Full project</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </perfect-scrollbar>
+      </div>
+  </div>
+</div>
+<app-timeline [currentRoute]="'Works'"></app-timeline>

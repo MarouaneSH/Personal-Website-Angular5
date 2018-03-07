@@ -1,0 +1,25 @@
+<nav [@openMenu]="openMenu">
+  <ul>
+    <li><a [routerLink]="['/']" routerLinkActive="router-link-active"  >Home</a></li>
+    <li><a [routerLink]="['/About']">About</a></li>
+    <li><a [routerLink]="['/Skills']">Skills</a></li>
+    <li><a [routerLink]="['/Works']">Works</a></li>
+  </ul>
+</nav>
+
+
+
+<div class="nav-icon" [class.open]="openMenu == 'active'"  (click)="toggleMenu()" >
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+<div class="social-wrapper">
+    <div class="social-logo">
+      <i class="ion-logo-facebook"></i>
+      <i class="ion-logo-linkedin"></i>
+      <i class="ion-logo-github"></i>
+    </div>
+</div>

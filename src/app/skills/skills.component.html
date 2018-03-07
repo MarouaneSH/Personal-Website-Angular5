@@ -1,0 +1,56 @@
+
+<div class="bg-image"
+     style="background-image:url('assets/img/sa.png')">
+</div>
+<div class="sh-title">
+  <h5 >SKILLS</h5>
+</div>
+<div class="sh-wrapper" @showup>
+  <div class="sh-content">
+     <div class="sh-desc">
+        <perfect-scrollbar style="max-width: 100%; max-height: 260px;" >
+            <h4>Programming</h4>
+            <div class="d-flex  skills-info">
+                <div class="col-6">
+                    <h6>Angular</h6>
+                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+                    <h6>Ionic</h6>
+                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+                    <h6>Laravel</h6>
+                    <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
+                    <h6>MySql</h6>
+                    <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+                </div>
+                <div class="col-6">
+                    <h6>JavaScript eS5/eS6</h6>
+                    <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
+                    <h6>VueJS</h6>
+                    <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+                    <h6>NodeJS</h6>
+                    <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+                    <h6>Firebase</h6>
+                    <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+                </div>
+          </div>
+          <h4>Technical</h4>
+          <div class="d-flex  skills-info">
+            <div class="col-6">
+               <h6>- Restful API</h6>
+               <h6>- Web Scraping</h6>
+               <h6>- UX/UI Design</h6>
+            </div>
+            <div class="col-6">
+                <h6>- Design pattern</h6>
+                <h6>- Illustrator</h6>
+            </div>
+          </div>
+          <div></div>
+          </perfect-scrollbar>
+          <div class="scroll-info">
+              scroll for more
+          </div>
+     </div>
+  </div>
+</div>
+
+<app-timeline [currentRoute]="'Skills'"></app-timeline>

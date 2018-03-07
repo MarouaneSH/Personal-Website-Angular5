@@ -1,0 +1,32 @@
+<div class="work-wrapper h-100">
+  <div class="d-flex h-100">
+    <div class="col-8 h-100">
+      <h4>Screenshots</h4>
+      <div class="project-screenshot h-100 text-center">
+        <perfect-scrollbar style="max-width: 100%; max-height: 100% " >
+            <img src="assets/img/works/{{project.defaultImage}}" width="100%">
+            <img  *ngFor="let screenshot  of project.screenshots"
+                  [src]="'assets/img/works/' + screenshot.url">
+        </perfect-scrollbar>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="close-icon" (click)="onNoClick()">
+          <i class="ion-md-close"></i>
+        </div>
+      <h6>Name</h6>
+      <p class="description">
+        {{project.name}}
+      </p>
+      <h6 *ngIf="project.description">Description</h6>
+      <p *ngIf="project.description" class="text-muted">
+        {{project.description}}
+      </p>
+      <div class="project-link">
+         <h6>Project link</h6>
+         <a *ngIf="project.url" href="{{project.url}}">{{project.url}}</a>
+         <a *ngIf="project.githubUrl" href="{{project.githubUrl}}">{{project.githubUrl}}</a>
+      </div>
+    </div>
+  </div>
+</div>

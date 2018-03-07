@@ -1,0 +1,26 @@
+<app-square-circle></app-square-circle>
+
+<div class="bg-image"
+     style="background-image:url('assets/img/about.jpg')">
+</div>
+<div class="sh-title">
+  <h5 >ABOUT</h5>
+</div>
+<div class="sh-wrapper" @showup>
+  <div class="sh-content">
+     <div class="sh-desc">
+       <h4>Biography</h4>
+       <div class="sh-desc-content d-flex">
+          <img src="assets/img/profile.png">
+          <p>
+           Hi, i'm marouane, <br>
+           I'm mobile and web developer with over 2 years of
+           hands-on experience creating mobile and web applications.
+           my passion is user experience and creating real business value.
+          </p>
+          <button class="sh-contact">Contact me</button>
+       </div>
+     </div>
+  </div>
+</div>
+<app-timeline [currentRoute]="'About'"></app-timeline>

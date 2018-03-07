@@ -1,0 +1,124 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Variables
+$background : #141414;
+$primary-bg : #1e1e1e ;
+
+*{
+  font-family: Montserrat Alternates
+}
+
+body{
+  overflow: hidden;
+  background: $background;
+  color: white;
+}
+.sh-wrapper{
+  background: $primary-bg;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  .sh-content{
+    background: #eeeeee;
+    margin-top: 25px;
+    transform: translate(102px);
+    height: 100%;
+    padding: 30px;
+    h4{
+      color: #292e2c;
+      position: relative;
+      &::after{
+        content: "";
+        background: #3ee7ad;
+        position: absolute;
+        width: 91px;
+        height: 27px;
+        left: 0px;
+        z-index: -1;
+        bottom: 10px;
+        right: 0;
+      }
+    }
+    .sh-desc{
+      .sh-desc-content{
+        align-items: flex-start;
+      }
+      img{
+        margin-right: 10px;
+        width: 200px;
+      }
+      p{
+        color: #8e9090;
+      }
+    }
+    .sh-contact{
+      position: absolute;
+      bottom: 10px;
+      right: 25px;
+      background: none;
+      border: none;
+      color: #292e2c;
+      cursor: pointer;
+      padding: 10px;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 13px;
+        background: #3ee7ad;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+}
+.sh-title h5{
+  font-size: 30px;
+  z-index: 2;
+  color: #dde1e0;
+  font-family: 'Metropolis';
+  position: absolute;
+  left: 150px;
+  top: 39px;
+  &::after{
+    content: "";
+    background: #DDE1E0;
+    position: absolute;
+    width: 61%;
+    height: 2px;
+    left: 0px;
+    z-index: -1;
+    bottom: 1px;
+  }
+}
+
+.bg-image{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  &::after{
+    content: "";
+    background: rgba(30, 30, 30, 0.63);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+.mat-progress-bar-fill::after {
+  background-color: #292e2c;
+}
+
+.mat-dialog-container{
+  background: #eeeeee;
+  overflow: hidden !important;
+}

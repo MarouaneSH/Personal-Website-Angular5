@@ -1,0 +1,113 @@
+.work-wrapper{
+  display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-content: flex-end;
+    width: 70%;
+    margin-left: auto;
+    margin-right: 60px;
+    justify-content: flex-start;
+    position: relative;
+    .work-title{
+      transform: translateY(61px) translateX(-61px);
+      h5{
+        font-size: 6rem;
+        font-family: 'Metropolis';
+        position: relative;
+        width: fit-content;
+        color: #dde1e0;
+        &::after {
+          content: "";
+          background: none;
+          position: absolute;
+          width: 60%;
+          height: 43%;
+          left: 0px;
+          z-index: -1;
+          top: 8px;
+      }
+      }
+    }
+    .work-content{
+      background: #1e1e1e;
+      padding-top: 25px;
+      height: calc(100vh - 217px);
+    }
+    .work-desc{
+      padding: 20px 30px;
+    }
+}
+
+.bg-image{
+  width: 100% !important;
+}
+.card{
+  background: #1e1e1e;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 25px;
+  .card-text{
+    font-size: 12px;
+  }
+  .card-footer{
+    color: #3ee7ad;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.active {
+  color:#3ee7ad;
+}
+
+
+.masonry {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+}
+
+.masonry-brick {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 8px 8px 0; /* Some gutter */
+}
+.masonry-brick {
+  &:nth-child(4nh+1){
+     width: 250px;
+  }
+  &:nth-child(4n+2){
+     width: 325px;
+  }
+  &:nth-child(4n+3){
+     width: 180px;
+  }
+  &:nth-child(4n+4){
+     width: 380px;
+  }
+}
+
+button:focus{
+  outline: 0;
+}
+
+.showup{
+  animation: showup 0.5s forwards;
+}
+
+@keyframes showup {
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.mat-chip{
+  background: rgba(80, 81, 93, 0.32);
+  color: #ffffff87;
+}

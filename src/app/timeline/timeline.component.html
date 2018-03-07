@@ -1,0 +1,25 @@
+  <div class="timeline-wrapper" >
+      <div class="line" >
+        <span class="circle home" (click)="navigateTo('/')">
+          <h6>Home</h6>
+        </span>
+        <span class="circle about" (click)="navigateTo('About')">
+            <h6>About</h6>
+        </span>
+        <span class="circle skills" (click)="navigateTo('Skills')">
+            <h6>Skills</h6>
+        </span>
+        <span class="circle works" (click)="navigateTo('Works')">
+            <h6>Work</h6>
+        </span>
+        <span class="circle contact" (click)="navigateTo('Contact')">
+            <h6>Contact</h6>
+        </span>
+      </div>
+      <div class="line-next" (click)="navigate()">
+        <div class="next">Next</div>
+        <div class="arrow">
+            <i class="arrowup"></i>
+        </div>
+      </div>
+  </div>
