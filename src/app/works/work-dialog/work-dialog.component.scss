@@ -4,7 +4,7 @@
 }
 
 h4{
-  color: #292e2c;
+  color: white;
   position: relative;
   z-index: 1;
   &::after{
@@ -12,15 +12,15 @@ h4{
     background: #3ee7ad;
     position: absolute;
     width: 91px;
-    height: 27px;
-    left: 0px;
+    height: 100%;
+    left: -7px;
     z-index: -1;
-    bottom: 10px;
+    bottom: 9px;
     right: 0;
   }
 }
 h6{
-  color: #292e2c;
+  color: #E2E6E5;
 }
 p{
   color: #8e9090;
@@ -44,12 +44,13 @@ a{
   top: -10px;
   right: 11px;
   cursor: pointer;
+  color:#E2E6E5
 }
 .close-dialog div{
   height: 37px;
   width: 2px;
   border-radius: 58px;
-  background: white;
+  background: #E2E6E5;
 
   transform: rotate(-45deg);
   &:first-of-type{
@@ -63,4 +64,5 @@ a{
   right: 0;
   font-size: 25px;
   cursor: pointer;
+  color: #E2E6E5
 }

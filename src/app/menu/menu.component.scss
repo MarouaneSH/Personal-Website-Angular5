@@ -1,7 +1,6 @@
 
 
   nav{
-    background: rgba(237, 237, 237, 0.95);
     z-index: 10;
     height: 100%;
     display: flex;
@@ -13,7 +12,10 @@
     top: 0;
     ul{
       list-style: none;
-      font-size: 30px;
+      font-size: 35px;
+      a{
+        color: white;
+      }
     }
   }
 
@@ -35,7 +37,7 @@
   cursor: pointer;
   &.open{
      span{
-       background: black;
+       background: #3ee7ad;
       &:nth-child(1){
         top: 18px;
         -webkit-transform: rotate(135deg);
@@ -94,13 +96,13 @@ nav ul li{
   margin-top: 5px;
   cursor: pointer;
   a{
-    color: black;
+    color: white;
     text-decoration: none;
   }
   &::before , &::after{
     content: '';
     width: 0%;
-    background: black;
+    background: #3ee7ad;
     height: 2px;
     position: absolute;
     transition: all .3s ease-in;
@@ -163,4 +165,19 @@ nav ul li{
     }
   }
 
+}
+
+
+
+.nav-left , .nav-right{
+  width: 50%;
+  background: rgba(30, 30, 30, 0.9);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.nav-right {
+  left: auto;
+  right: 0;
 }

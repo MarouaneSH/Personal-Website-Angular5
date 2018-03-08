@@ -1,6 +1,7 @@
+import { workAnimation } from './../../shared/animations';
 import { Project } from './../service/project.model';
 import { WorkProjectService } from './../service/work-project.service';
-import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { Component, Inject, OnInit, Renderer2, HostBinding } from '@angular/core';
 import {MatDialog , MatDialogRef , MAT_DIALOG_DATA} from '@angular/material';
 import { WorkDialogComponent } from '../work-dialog/work-dialog.component';
 import { PerfectScrollbarComponent } from 'ngx-perfect-scrollbar/dist/lib/perfect-scrollbar.component';
@@ -9,8 +10,13 @@ import { PerfectScrollbarComponent } from 'ngx-perfect-scrollbar/dist/lib/perfec
   selector: 'app-work-list',
   templateUrl: './work-list.component.html',
   styleUrls: ['./work-list.component.scss'],
+  animations:[
+    workAnimation
+  ]
 })
 export class WorkListComponent implements OnInit {
+
+  @HostBinding('@workAnimation') routeLoading = true;
 
   filter= false;
   projects: Project[];
