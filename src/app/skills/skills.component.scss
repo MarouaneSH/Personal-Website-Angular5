@@ -1,15 +1,26 @@
 h6{
-  color: #8e9090;
+  color: #292e2c;
   margin-top: 10px;
+  font-size: 15px;
 }
 h4:last-of-type{
     margin-top: 25px;
 }
 
+.sh-wrapper .sh-content h4{
+  &::after{
+    background: none;
+  }
+  font-size: 15px;
+  font-family: 'Montserrat Alternates';
+  font-weight: normal;
+
+}
 .scroll-info{
   text-align: right;
   color: #292e2c;
   position: absolute;
   right: 20px;
   bottom: 2px;
+  font-size: 12px;
 }

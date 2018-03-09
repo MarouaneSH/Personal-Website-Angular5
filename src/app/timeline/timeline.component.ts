@@ -34,6 +34,13 @@ export class TimelineComponent implements OnInit {
   navigateTo(Route){
     this.router.navigate([Route]);
   }
+
+  DoMargin(){
+    if(this.currentRoute === 'Contact') {
+      return '40px';
+    }
+    return 0;
+  }
   navigate(){
     let index = this.routes.indexOf(this.currentRoute) ;
     this.navigateTo(this.routes[++index]);

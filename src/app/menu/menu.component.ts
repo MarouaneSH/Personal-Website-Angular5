@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { openMenu } from './../shared/animations';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,12 +13,17 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   openMenu = 'inactive';
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
   toggleMenu() {
     this.openMenu = this.openMenu === 'active' ? 'inactive' : 'active';
+  }
+
+  navigateTo(route){
+    this.openMenu = 'inactive';
+    this.router.navigate([route]);
   }
 
 }

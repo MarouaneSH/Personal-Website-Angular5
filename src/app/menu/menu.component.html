@@ -2,11 +2,11 @@
   <div class="nav-left"></div>
   <div class="nav-right"></div>
   <ul>
-    <li><a [routerLink]="['/']" routerLinkActive="router-link-active"  >Home</a></li>
-    <li><a [routerLink]="['/About']">About</a></li>
-    <li><a [routerLink]="['/Skills']">Skills</a></li>
-    <li><a [routerLink]="['/Works']">Works</a></li>
-    <li><a [routerLink]="['/Contact']">Contact</a></li>
+    <li><a [routerLink]="['/']" (click)="toggleMenu()" >Home</a></li>
+    <li><a (click)="navigateTo('About')">About</a></li>
+    <li><a (click)="navigateTo('Skills')" >Skills</a></li>
+    <li><a (click)="navigateTo('Works')">Works</a></li>
+    <li><a (click)="navigateTo('Contact')">Contact</a></li>
   </ul>
 </nav>
 

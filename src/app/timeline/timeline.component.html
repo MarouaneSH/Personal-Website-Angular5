@@ -1,5 +1,5 @@
   <div class="timeline-wrapper" >
-      <div class="line" >
+      <div class="line" [ngStyle]="{marginRight:DoMargin()}">
         <span class="circle home" (click)="navigateTo('/')">
           <h6>Home</h6>
         </span>
@@ -12,11 +12,11 @@
         <span class="circle works" (click)="navigateTo('Works')">
             <h6>Work</h6>
         </span>
-        <span class="circle contact" (click)="navigateTo('Contact')">
+        <span class="circle contact" (click)="navigateTo('Contact')" >
             <h6>Contact</h6>
         </span>
       </div>
-      <div class="line-next" (click)="navigate()">
+      <div *ngIf="currentRoute != 'Contact'" class="line-next" (click)="navigate()">
         <div class="next">Next</div>
         <div class="arrow">
             <i class="arrowup"></i>

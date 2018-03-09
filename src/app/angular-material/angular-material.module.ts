@@ -7,7 +7,8 @@ import {
         MatChipsModule,
         MatTabsModule,
         MatProgressBarModule,
-        MatGridListModule
+        MatGridListModule,
+        MatInputModule
       } from '@angular/material';
 
 
@@ -19,7 +20,8 @@ import {
     MatProgressBarModule,
     MatGridListModule,
     MatDialogModule,
-    MatChipsModule
+    MatChipsModule,
+    MatInputModule
   ],
   exports: [
     MatTabsModule,
@@ -28,7 +30,8 @@ import {
     MatProgressBarModule,
     MatGridListModule,
     MatDialogModule,
-    MatChipsModule
+    MatChipsModule,
+    MatInputModule
   ],
   declarations: []
 })
