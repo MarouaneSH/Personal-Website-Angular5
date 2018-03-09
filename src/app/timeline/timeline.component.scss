@@ -28,7 +28,7 @@
       content: "";
       height: 10px;
       width: 10px;
-      background: rgba(62, 231, 173, 0.8);
+      background: rgba(62, 231, 173, 1);
       position: absolute;
       left: 0;
       right: 0;
@@ -63,9 +63,9 @@
     z-index: 1;
     &::after{
       content: "";
-      width: calc(100% - 19px);
+      width: calc(100% - 20px);
       height: 2px;
-      background: rgba(91, 150, 130, 0.7);
+      background: rgb(91, 150, 130);
       top: 14px;
       left: 0;
       position: absolute;

@@ -1,3 +1,4 @@
+import { PreloadingService } from './preloading.service';
   import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +8,8 @@
 })
 export class AppComponent {
 
+    constructor(public preloadingService: PreloadingService){
+      this.preloadingService.preloadDefaultImages();
+    }
 
 }

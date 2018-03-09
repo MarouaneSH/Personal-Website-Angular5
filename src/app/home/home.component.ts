@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     const moveX = (window.innerWidth / 2 - event.pageX) * 0.1;
     const moveY = (window.innerHeight / 2 - event.pageY) * 0.1;
 
-   if(moveX < 10)  {
+   if(moveX < 10 && moveX > -10 )  {
      background.style.backgroundPositionX = moveX + 'px';
     }
     background.style.backgroundPositionY = moveY + 'px';

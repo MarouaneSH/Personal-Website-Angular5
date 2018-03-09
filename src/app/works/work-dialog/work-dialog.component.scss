@@ -7,17 +7,6 @@ h4{
   color: white;
   position: relative;
   z-index: 1;
-  &::after{
-    content: "";
-    background: #3ee7ad;
-    position: absolute;
-    width: 91px;
-    height: 100%;
-    left: -7px;
-    z-index: -1;
-    bottom: 9px;
-    right: 0;
-  }
 }
 h6{
   color: #E2E6E5;

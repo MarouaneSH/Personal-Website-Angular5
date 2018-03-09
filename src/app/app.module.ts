@@ -1,3 +1,4 @@
+import { PreloadingService } from './preloading.service';
 import { TimelineService } from './timeline/timeline.service';
 import { PerfectScrollbarComponent } from 'ngx-perfect-scrollbar/dist/lib/perfect-scrollbar.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -44,6 +45,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
   ],
   providers: [
+    PreloadingService,
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG

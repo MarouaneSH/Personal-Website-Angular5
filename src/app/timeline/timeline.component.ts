@@ -1,7 +1,8 @@
 import { TimelineService } from './timeline.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router,NavigationStart } from '@angular/router';
 import { trigger, transition, animate, keyframes, style } from '@angular/animations';
 import { Component, OnInit, Renderer2,Input  } from '@angular/core';
+
 
 @Component({
   selector: 'app-timeline',
@@ -24,7 +25,8 @@ export class TimelineComponent implements OnInit {
   state ;
   routes:Array<string> = ['/','About','Skills','Works','Contact'];
 
-  constructor(private renderer: Renderer2,private timelineService:TimelineService,public router:Router,) { }
+  constructor(private renderer: Renderer2, public router:Router) {
+  }
 
   ngOnInit() {
     const circle = document.querySelector(`.${this.currentRoute.toLocaleLowerCase()}`);
@@ -41,6 +43,7 @@ export class TimelineComponent implements OnInit {
     }
     return 0;
   }
+
   navigate(){
     let index = this.routes.indexOf(this.currentRoute) ;
     this.navigateTo(this.routes[++index]);
