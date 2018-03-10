@@ -122,3 +122,24 @@ button:focus{
   height: 100%;
   transform: translateX(-100%);
 }
+
+
+
+@media screen and (max-width: 1024px){
+  .work-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    position: initial;
+    transform: translateY(-20%);
+    .work-content{
+      background: #282929;
+      height: 100%;
+    }
+    .work-title{
+      transform : translateY(26px) translateX(0);
+      h5{
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -117,3 +117,23 @@
   border-color: rgba(62, 231, 172, 0.767);
  }
 }
+
+
+@media screen and (max-width: 1024px){
+  .line-next{
+    width: 64px;
+    /* margin: 0; */
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  .timeline-wrapper{
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    position: initial;
+    .circle:not(:last-child){
+      margin-right: 20% !important;
+    }
+  }
+}

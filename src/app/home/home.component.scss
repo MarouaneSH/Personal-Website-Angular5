@@ -88,3 +88,23 @@
   }
 
 }
+
+@media screen and (max-width: 1024px){
+  #bg-image{
+    width: 100%;
+  }
+  #bg-line{
+    width: 100%;
+    background-position: right;
+    top: auto;
+    bottom: 0;
+  }
+ .desc-wrapper{
+    h3{
+      font-size: 1.5rem;
+    }
+    h5{
+      font-size: 1rem;
+    }
+ }
+}

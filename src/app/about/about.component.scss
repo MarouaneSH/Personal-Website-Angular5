@@ -1,0 +1,24 @@
+@media screen and (max-width: 1124px) {
+  .sh-wrapper {
+    padding: 20px 10px;
+    padding-bottom: 70px;
+    .sh-desc{
+       img {
+         width: 120px;
+       }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sh-wrapper {
+    .sh-desc{
+      img {
+        width: auto;
+      }
+      p{
+        font-size: 18px;
+      }
+   }
+    }
+}

@@ -2,8 +2,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 // Variables
-$background : #141414;
-$primary-bg : #1e1e1e ;
+$background : #1D1D1D;
+$primary-bg : #202021 ;
 
 *{
   font-family: Montserrat Alternates
@@ -13,6 +13,9 @@ body{
   overflow: hidden;
   background: $background;
   color: white;
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
 }
 .sh-wrapper{
   background: $primary-bg;
@@ -22,6 +25,7 @@ body{
   width: 50%;
   position: absolute;
   bottom: 0;
+  height: 60%;
   .sh-content{
     background: #eeeeee;
     margin-top: 25px;
@@ -237,5 +241,50 @@ md-input-container:not(.md-input-invalid).md-input-focused .md-input {
     -webkit-transform: perspective(140px) rotateY(180deg);
             transform: perspective(140px) rotateY(180deg);
     opacity: 0;
+  }
+}
+
+
+
+/*Mobile */
+@media screen and (max-width: 1024px){
+  body{
+    overflow-y: scroll;
+    background: $background;
+  }
+  .sh-title h5{
+    left: 20px;
+  }
+  .bg-image{
+    height: 60%;
+    position: initial;
+    width: 100%;
+  }
+  .sh-wrapper{
+    position: initial;
+    height: auto;
+    padding: 40px 60px;
+    width: 100%;
+    padding: 0;
+    .sh-content{
+      transform: translate(0, -73px);
+      padding: 20px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 80px 20px;
+      padding-top: 40px;
+    }
+  }
+  .social-logo{
+    display: none !important;
+  }
+  .sh-desc-content{
+    flex-direction: column;
+    text-align: center;
+    img{
+      margin-right: auto !important;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
   }
 }
